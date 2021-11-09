@@ -8,24 +8,16 @@ namespace gilded_roseTP
     {
         static void Main(string[] args)
         {
-            element el = new element();
-            el.sellIn = 15;
-            el.quality = 15;
-            el.type = "";
+            List<element> el = new List<element>();
             UpdateQuality(el);
         }
 
-        public static void SulfurasElement(element element)
+        public static void UpdateItemQuality(element element)
         {
             if (element.type == "sulfuras")
             {
-                element.sellIn = element.sellIn;
-                element.quality = element.quality;
+                return;
             }
-        }
-
-        public static void TypeElement(element element)
-        {
             if (element.type == "aged Bire" || element.type == "backstage passes")
             {
                 element.quality++;
@@ -44,12 +36,17 @@ namespace gilded_roseTP
             }
             else
             {
-                element.sellIn--;
-                element.quality--;
+                UpdateGenericQuality(element);
             }
         }
 
-        public static void QualityElement(element element)
+        public static void UpdateGenericQuality(element element)
+        {
+            element.sellIn--;
+            element.quality--;
+        }
+
+        public static void KeepQualityInRange(element element)
         {
             if (element.quality > 50)
             {
@@ -60,11 +57,13 @@ namespace gilded_roseTP
                 element.quality = 0;
             }
         }
-        public static void UpdateQuality (element element)
+        public static void UpdateQuality (List<element> element)
         {
-            SulfurasElement(element);
-            TypeElement(element);
-            QualityElement(element);
+            foreach(element el in element)
+            {
+                UpdateItemQuality(el);
+                KeepQualityInRange(el);
+            }
         }
     }
 }
