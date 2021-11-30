@@ -9,6 +9,7 @@ namespace gilded_roseTpTest
         {
             new Item("Generic Item", 3, 3),
             new Item("Generic Item", -1, 4)
+            new Item("Generic Item", 3 , 0)
         }
 
 
@@ -40,10 +41,17 @@ namespace gilded_roseTpTest
         }
 
         [TestMethod]
-        public void Should_DecreaseTwiceQualityAndSellInEveryDay()
+        public void Should_DecreaseTwiceAsFast()
         {
             shop.UpdateQuality();
-             Assert.AreEqual(2, shop, items[2].SellIn);
+             Assert.AreEqual(2, shop, items[1].SellIn);
+        }
+
+        [TestMethod]
+        public void Should_NeverHaveNegativeQuality()
+        {
+            shop.UpdateQuality();
+            Assert.AreEqual(0, shop, items[2].SellIn);
         }
     }
 }
