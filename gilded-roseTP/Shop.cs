@@ -19,7 +19,19 @@ namespace gilded_roseTP
             {
                 i.SellIn--;
                 i.Quality--;
+
+                if (i.SellIn < 0)
+                    i.Quality--;
+
+                FloorQualityToZero(i.Quality);
+
             }
+        }
+
+        private void FloorQualityToZero (Item item)
+        {
+            if (item.Quality < 0)
+                item.Quality = 0;
         }
 
     }
