@@ -17,19 +17,14 @@ namespace gilded_roseTP
         {
             foreach (Item i in this.Items)
             {
-<<<<<<< HEAD
-                i.sellIn--;
-                i.quality--;
-=======
                 i.SellIn--;
                 i.Quality--;
 
                 if (i.SellIn < 0)
                     i.Quality--;
 
-                FloorQualityToZero(i.Quality);
+                FloorQualityToZero(i);
 
->>>>>>> 5518fd5f89c619239c2074b4cdf116e6b097acef
             }
         }
 

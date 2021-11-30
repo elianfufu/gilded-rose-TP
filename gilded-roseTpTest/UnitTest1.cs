@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using gilded_roseTP;
 
 namespace gilded_roseTpTest
 {
@@ -7,10 +9,10 @@ namespace gilded_roseTpTest
     {
         private List<Item> items = new List<Item>()
         {
-            new Item("Generic Item", 3, 3),
-            new Item("Generic Item", -1, 4),
-            new Item("Generic Item", 3 , 0)
-        }
+            new GenericItem("Generic Item", 3, 3),
+            new GenericItem("Generic Item", -1, 4),
+            new GenericItem("Generic Item", 3 , 0)
+        };
 
 
         private Shop shop;
@@ -18,18 +20,18 @@ namespace gilded_roseTpTest
         [TestInitialize]
         public void Setup()
         {
-            this.shop = new Shop(Item)
+            this.shop = new Shop(items);
         }
 
         [TestMethod]
         public void Should_HaveSellOnItem()
         {
-            Assert.AreEqual(3, shop, items[0].SellIn);
+            Assert.AreEqual(3, shop, items[0].ellIn);
         }
         [TestMethod]
         public void Should_HaveQualityOnItem()
         {
-            Assert.AreEqual(3, shop, items[0].Quality);
+            Assert.AreEqual(3, shop, items[0].quality);
         }
 
         [TestMethod]

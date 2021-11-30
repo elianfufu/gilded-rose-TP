@@ -17,3 +17,4 @@ C:\Users\Antoine\Desktop\Travail\I1\Architecture applicative\gilded-rose-TP\gild
 C:\Users\Antoine\Desktop\Travail\I1\Architecture applicative\gilded-rose-TP\gilded-roseTpTest\obj\Debug\netcoreapp3.1\gilded-roseTpTest.dll
 C:\Users\Antoine\Desktop\Travail\I1\Architecture applicative\gilded-rose-TP\gilded-roseTpTest\obj\Debug\netcoreapp3.1\gilded-roseTpTest.pdb
 >>>>>>> 5518fd5f89c619239c2074b4cdf116e6b097acef
+C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\gilded-roseTpTest\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping

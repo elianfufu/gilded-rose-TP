@@ -1,0 +1,5 @@
+C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\gilded-roseTP\obj\Debug\netcoreapp3.1\gilded-roseTP.csproj.AssemblyReference.cache
+C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\gilded-roseTP\obj\Debug\netcoreapp3.1\gilded-roseTP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\gilded-roseTP\obj\Debug\netcoreapp3.1\gilded-roseTP.AssemblyInfoInputs.cache
+C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\gilded-roseTP\obj\Debug\netcoreapp3.1\gilded-roseTP.AssemblyInfo.cs
+C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\gilded-roseTP\obj\Debug\netcoreapp3.1\gilded-roseTP.csproj.CoreCompileInputs.cache
