@@ -6,8 +6,10 @@ namespace gilded_roseTP.models
 {
     public class element
     {
-        public int sellIn { get; set; }
-        public int quality { get; set; }
-        public string type { get; set; }
+        private string type { get; set; }
+        private int sellIn { get; set; }
+        private int quality { get; set; }
+
+        
     }
 }

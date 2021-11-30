@@ -8,7 +8,7 @@ namespace gilded_roseTpTest
         private List<Item> items = new List<Item>()
         {
             new Item("Generic Item", 3, 3),
-            new Item("Generic Item", -1, 4)
+            new Item("Generic Item", -1, 4),
             new Item("Generic Item", 3 , 0)
         }
 

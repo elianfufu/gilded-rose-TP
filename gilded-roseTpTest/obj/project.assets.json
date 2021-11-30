@@ -1660,6 +1660,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "gilded-roseTP/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/gilded-roseTP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gilded-roseTP.dll": {}
+        }
       }
     }
   },
@@ -6103,6 +6113,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "gilded-roseTP/1.0.0": {
+      "type": "project",
+      "path": "../gilded-roseTP/gilded-roseTP.csproj",
+      "msbuildProject": "../gilded-roseTP/gilded-roseTP.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6110,28 +6125,24 @@
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
-      "coverlet.collector >= 3.0.2"
+      "coverlet.collector >= 3.0.2",
+      "gilded-roseTP >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Antoine\\.nuget\\packages\\": {},
-    "D:\\Programmes files\\Visual studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\elian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Antoine\\Desktop\\Travail\\I1\\Architecture applicative\\gilded-rose-TP\\gilded-roseTpTest\\gilded-roseTpTest.csproj",
+      "projectUniqueName": "C:\\Users\\elian\\Bureau\\I1\\Architecture applicative\\EbbTechnologies\\gilded-rose\\gilded-roseTpTest\\gilded-roseTpTest.csproj",
       "projectName": "gilded-roseTpTest",
-      "projectPath": "C:\\Users\\Antoine\\Desktop\\Travail\\I1\\Architecture applicative\\gilded-rose-TP\\gilded-roseTpTest\\gilded-roseTpTest.csproj",
-      "packagesPath": "C:\\Users\\Antoine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Antoine\\Desktop\\Travail\\I1\\Architecture applicative\\gilded-rose-TP\\gilded-roseTpTest\\obj\\",
+      "projectPath": "C:\\Users\\elian\\Bureau\\I1\\Architecture applicative\\EbbTechnologies\\gilded-rose\\gilded-roseTpTest\\gilded-roseTpTest.csproj",
+      "packagesPath": "C:\\Users\\elian\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elian\\Bureau\\I1\\Architecture applicative\\EbbTechnologies\\gilded-rose\\gilded-roseTpTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Programmes files\\Visual studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Antoine\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\elian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6144,7 +6155,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\elian\\Bureau\\I1\\Architecture applicative\\EbbTechnologies\\gilded-rose\\gilded-roseTP\\gilded-roseTP.csproj": {
+              "projectPath": "C:\\Users\\elian\\Bureau\\I1\\Architecture applicative\\EbbTechnologies\\gilded-rose\\gilded-roseTP\\gilded-roseTP.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
