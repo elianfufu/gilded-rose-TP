@@ -6,17 +6,20 @@ namespace gilded_roseTP
 {
     public class conjuredItem : Item
     {
-        public conjuredItem(string type, int sellIn, int quality) : base(type, sellIn, quality) { }
+        public conjuredItem(string name, int sellIn, int quality) : base(name, sellIn, quality) { }
 
         public override void Update()
         {
-            sellIn--;
-            quality -= 2;
+            SellIn--;
+            Quality -= 2;
 
-            if (this.sellIn < 0)
+            if (this.SellIn < 0)
             {
-                this.quality -= 2;
+                this.Quality -= 2;
             }
+
+            this.CellQualityToFifty();
+            this.FloorQualityToZero();
         }
     }
 }
