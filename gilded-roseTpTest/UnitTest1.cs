@@ -14,13 +14,13 @@ namespace gilded_roseTpTest
             new GenericItem("Generic Item", 3 , 0)
         };
         private InMemoryRepository repository;
-        private Shop shop;
+        private InventoryInteractor shop;
 
         [TestInitialize]
         public void Setup()
         {
             this.repository = new InMemoryRepository();
-            this.shop = new Shop(this.repository);
+            this.shop = new InventoryInteractor(this.repository);
         }
 
         [TestMethod]
@@ -46,7 +46,7 @@ namespace gilded_roseTpTest
         public void Should_DecreaseTwiceAsFast()
         {
             shop.UpdateQuality();
-             Assert.AreEqual(2, this.repository.Items[1].sellIn);
+             Assert.AreEqual(-1, this.repository.Items[1].sellIn);
         }
 
         [TestMethod]

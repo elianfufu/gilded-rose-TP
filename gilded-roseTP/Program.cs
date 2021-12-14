@@ -8,9 +8,13 @@ namespace gilded_roseTP
     {
         static void Main(string[] args)
         {
-            Shop shop = new Shop(new InMemoryRepository());
-            shop.UpdateQuality();
-            foreach(Item i in shop.GetInventory())
+            InventoryInteractor shop = new InventoryInteractor(new InMemoryRepository());
+            IUpdateQuality inventoryUpdater = shop;
+            IGetInventory inventoryViewer = shop;
+
+            inventoryUpdater.UpdateQuality();
+
+            foreach(Item i in inventoryViewer.GetInventory())
             {
                 Console.WriteLine("{0} Quality {1}", i.name, i.quality);
             }

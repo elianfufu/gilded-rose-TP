@@ -4,10 +4,10 @@ using System.Text;
 
 namespace gilded_roseTP
 {
-    public class Shop
+    public class InventoryInteractor : IGetInventory, IUpdateQuality
     {
         private IInventoryRepo repository;
-        public Shop(IInventoryRepo repository)
+        public InventoryInteractor(IInventoryRepo repository)
         {
             this.repository = repository;
         }
