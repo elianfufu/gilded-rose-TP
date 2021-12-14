@@ -10,8 +10,8 @@ namespace gilded_roseTP
 
         public override void Update()
         {
-            SellIn--;
-            Quality--;
+            sellIn--;
+            quality--;
 
             this.CellQualityToFifty();
             this.FloorQualityToZero();

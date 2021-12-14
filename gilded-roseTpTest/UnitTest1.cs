@@ -20,13 +20,14 @@ namespace gilded_roseTpTest
         [TestInitialize]
         public void Setup()
         {
+            this.repository = new InMemoryRepository;
             this.shop = new Shop(items);
         }
 
         [TestMethod]
         public void Should_HaveSellOnItem()
         {
-            Assert.AreEqual(3, shop, items[0].ellIn);
+            Assert.AreEqual(3, shop, items[0].sellIn);
         }
         [TestMethod]
         public void Should_HaveQualityOnItem()
@@ -38,22 +39,22 @@ namespace gilded_roseTpTest
         public void Should_DecreaseQualityAndSellInEveryDay()
         {
             shop.UpdateQuality();
-            Assert.AreEqual(2, shop, items[0].Quality);
-            Assert.AreEqual(2, shop, items[0].SellIn);
+            Assert.AreEqual(2, shop, items[0].quality);
+            Assert.AreEqual(2, shop, items[0].sellIn);
         }
 
         [TestMethod]
         public void Should_DecreaseTwiceAsFast()
         {
             shop.UpdateQuality();
-             Assert.AreEqual(2, shop, items[1].SellIn);
+             Assert.AreEqual(2, shop, items[1].sellIn);
         }
 
         [TestMethod]
         public void Should_NeverHaveNegativeQuality()
         {
             shop.UpdateQuality();
-            Assert.AreEqual(0, shop, items[2].SellIn);
+            Assert.AreEqual(0, shop, items[2].sellIn);
         }
     }
 }

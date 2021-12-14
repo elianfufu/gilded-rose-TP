@@ -6,15 +6,15 @@ namespace gilded_roseTP
 {
     public abstract class Item
     {
-        public string Name { get; set; }
-        public int SellIn { get; set; }
-        public int Quality { get; set; }
+        public string type { get; set; }
+        public int sellIn { get; set; }
+        public int quality { get; set; }
 
-        public Item(string name, int sellIn, int quality)
+        public Item(string Type, int SellIn, int Quality)
         {
-            Name = name;
-            SellIn = sellIn;
-            Quality = quality;
+            type = Type;
+            sellIn = SellIn;
+            quality = Quality;
         }
         
 
@@ -22,17 +22,17 @@ namespace gilded_roseTP
 
         protected void CellQualityToFifty()
         {
-            if (this.Quality > 50)
+            if (this.quality > 50)
             {
-                this.Quality = 50;
+                this.quality = 50;
             }
         }
 
         protected void FloorQualityToZero()
         {
-            if (this.Quality < 0)
+            if (this.quality < 0)
             {
-                this.Quality = 0;
+                this.quality = 0;
             }
         }
     }
