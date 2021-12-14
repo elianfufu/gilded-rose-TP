@@ -1,5 +1,4 @@
-﻿using gilded_roseTP.models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace gilded_roseTP
