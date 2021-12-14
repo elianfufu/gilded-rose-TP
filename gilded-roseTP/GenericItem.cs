@@ -6,7 +6,7 @@ namespace gilded_roseTP
 {
     public class GenericItem : Item
     {
-        public GenericItem(string type, int sellIn, int quality) : base(type, sellIn, quality){ }
+        public GenericItem(string name, int sellIn, int quality) : base(name, sellIn, quality){ }
 
         public override void Update()
         {
@@ -16,7 +16,5 @@ namespace gilded_roseTP
             this.CellQualityToFifty();
             this.FloorQualityToZero();
         }
-
-        
     }
 }

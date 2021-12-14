@@ -6,9 +6,8 @@ namespace gilded_roseTP
 {
     public class Shop
     {
-        public IList<Item> Items { get; private set; }
-        private IinventoryRepo repository;
-        public Shop(IinventoryRepo repository)
+        private IInventoryRepo repository;
+        public Shop(IInventoryRepo repository)
         {
             this.repository = repository;
         }
@@ -21,6 +20,11 @@ namespace gilded_roseTP
                 item.Update();
 
             this.repository.SaveInventory(items);
+        }
+
+        public IList<Item> GetInventory()
+        {
+            return this.repository.GetInventory();
         }
     }
 }

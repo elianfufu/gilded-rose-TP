@@ -6,13 +6,13 @@ namespace gilded_roseTP
 {
     public abstract class Item
     {
-        public string type { get; set; }
+        public string name { get; set; }
         public int sellIn { get; set; }
         public int quality { get; set; }
 
         public Item(string Type, int SellIn, int Quality)
         {
-            type = Type;
+            name = Type;
             sellIn = SellIn;
             quality = Quality;
         }

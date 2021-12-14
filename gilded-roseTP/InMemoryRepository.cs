@@ -4,7 +4,7 @@ using System.Text;
 
 namespace gilded_roseTP
 {
-    public class InMemoryRepository : IinventoryRepo
+    public class InMemoryRepository : IInventoryRepo
     {
         private IList<Item> items = new List<Item>()
         {
@@ -17,7 +17,12 @@ namespace gilded_roseTP
 
         public IList<Item> GetInventory()
         {
-            return this.items
+            return this.items;
+        }
+
+        public void SaveInventory(IList<Item> items)
+        {
+            this.items = items;
         }
     }
 }
