@@ -68,7 +68,7 @@ namespace gilded_roseTP
                     string obj = "";
                     foreach(var item in items)
                     {
-                        obj = items[i].name + "," + items[i].sellIn + "," + items[i].quality;
+                        obj = items[i].name + ";" + items[i].sellIn + ";" + items[i].quality;
                         Console.WriteLine(obj);
                         file.WriteLine(obj);
                         i++;
