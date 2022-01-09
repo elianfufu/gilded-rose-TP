@@ -1,0 +1,16 @@
+	Nouvelle injection	
+Generic Item;2;2;4
+Generic Item;-2;3;4
+Generic Item;2;0;4
+	Nouvelle injection	
+Generic Item;2;2;4
+Generic Item;-2;3;4
+Generic Item;2;0;4
+	Nouvelle injection	
+Generic Item;2;2;4
+Generic Item;-2;3;4
+Generic Item;2;0;4
+	Nouvelle injection	
+Generic Item;9;10;15
+Generic Item;39;44;46
+Generic Item;29;19;4

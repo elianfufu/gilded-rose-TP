@@ -9,7 +9,7 @@ namespace gilded_roseTP
     {
         static void Main(string[] args)
         {
-            InventoryInteractor inventary = new InventoryInteractor(new InMemoryRepository());
+            InventoryInteractor inventary = new InventoryInteractor(new FileRepository());
             IUpdateQuality inventoryUpdater = inventary;
             IGetInventory inventoryViewer = inventary;
 
