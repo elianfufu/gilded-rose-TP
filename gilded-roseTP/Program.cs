@@ -1,5 +1,8 @@
-﻿using gilded_roseTP.Shop;
-using gilded_roseTP.BigBoss;
+﻿using gilded_roseTP.Interfaces.Inventory;
+using gilded_roseTP.Interfaces.Shop;
+using gilded_roseTP.Items;
+using gilded_roseTP.Models.Inventory;
+using gilded_roseTP.Models.Shop;
 using System;
 using System.Collections.Generic;
 
@@ -26,7 +29,7 @@ namespace gilded_roseTP
 
             Console.WriteLine("Now we sell and buy item");
 
-            Console.WriteLine("Balance : " + shop.SellItem(new GenericItem("Generic Item3", 13, 12, 9)));
+            Console.WriteLine("Balance : " + shop.SellItem(new GenericItem("Generic Item3", 3, 0, 3)));
             Console.WriteLine("Balance : " + shop.BuyItem(new GenericItem("Generic Item4", 55,55, 5)));
             Console.WriteLine(shop.BuyItem(new ConjuredItem("Conjured Item1", 55,55, 5)));
             

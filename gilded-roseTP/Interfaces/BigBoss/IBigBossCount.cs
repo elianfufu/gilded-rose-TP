@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace gilded_roseTP.BigBoss
+namespace gilded_roseTP.Interfaces.BigBoss
 {
     public interface IBigBossCount
     {

@@ -1,10 +1,12 @@
-﻿using gilded_roseTP.Shop;
+﻿using gilded_roseTP.Interfaces.Shop;
+using gilded_roseTP.Items;
+using gilded_roseTP.Models.Inventory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace gilded_roseTP
+namespace gilded_roseTP.Models.Shop
 {
     public class ShopInteractor: IShopManager
     {

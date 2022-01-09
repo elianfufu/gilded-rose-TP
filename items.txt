@@ -1,12 +1,5 @@
 	Nouvelle injection	
-Generic Item;9;10;15
-Generic Item;39;44;46
-Generic Item;29;19;4
-	Nouvelle injection	
-Generic Item;9;10;15
-Generic Item;39;44;46
-Generic Item;29;19;4
-	Nouvelle injection	
-Generic Item;9;10;15
-Generic Item;39;44;46
-Generic Item;29;19;4
+Generic Item1;2;2;5
+Generic Item2;-2;3;4
+Generic Item3;2;0;3
+Conjured Item;14;8;7

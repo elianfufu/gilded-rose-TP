@@ -1,4 +1,6 @@
-﻿using System;
+﻿using gilded_roseTP.Interfaces.Inventory;
+using gilded_roseTP.Items;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,7 +13,7 @@ namespace gilded_roseTP
             new GenericItem("Generic Item1", 3, 3, 5),
             new GenericItem("Generic Item2", -1, 4, 4),
             new GenericItem("Generic Item3", 3 , 0, 3),
-            new ConjuredItem("Conjured Item", 15, 8, 7)
+            new ConjuredItem("Conjured Item", 15, 10, 7)
         };
 
         public IList<Item> Items => this.items;

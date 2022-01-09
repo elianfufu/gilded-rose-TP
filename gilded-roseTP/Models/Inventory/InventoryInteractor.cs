@@ -1,8 +1,10 @@
-﻿using System;
+﻿using gilded_roseTP.Interfaces.Inventory;
+using gilded_roseTP.Items;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace gilded_roseTP
+namespace gilded_roseTP.Models.Inventory
 {
     public class InventoryInteractor : IGetInventory, IUpdateQuality
     {
@@ -14,7 +16,7 @@ namespace gilded_roseTP
 
         public void UpdateQuality()
         {
-            IList<Item> items = this.repository.GetInventory();
+            IList<Item> items = (IList<Item>)this.repository.GetInventory();
 
             foreach (Item item in items)
                 item.Update();
@@ -24,7 +26,7 @@ namespace gilded_roseTP
 
         public IList<Item> GetInventory()
         {
-            return this.repository.GetInventory();
+            return (IList<Item>)this.repository.GetInventory();
         }
     }
 }

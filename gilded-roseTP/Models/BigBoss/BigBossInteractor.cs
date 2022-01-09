@@ -1,8 +1,10 @@
-﻿using System;
+﻿using gilded_roseTP.Interfaces.BigBoss;
+using gilded_roseTP.Interfaces.Inventory;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace gilded_roseTP.BigBoss
+namespace gilded_roseTP.Models.BigBoss
 {
     public class BigBossInteractor : IBigBossCount
     {

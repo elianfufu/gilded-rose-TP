@@ -1,4 +1,6 @@
-﻿using System;
+﻿using gilded_roseTP.Interfaces.Inventory;
+using gilded_roseTP.Items;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 namespace gilded_roseTP
@@ -8,9 +10,10 @@ namespace gilded_roseTP
         // Nous n'avons pas réussi à trouver un moyen de récuperer la list d'items du projet, alors pour tout de meme avancer nous avons crée des items ci-dessous
         private IList<Item> items = new List<Item>()
         {
-            new GenericItem("Generic Item", 10, 11, 15),
-            new GenericItem("Generic Item", 40, 45, 46),
-            new GenericItem("Generic Item", 30 , 20, 4)
+            new GenericItem("Generic Item1", 3, 3, 5),
+            new GenericItem("Generic Item2", -1, 4, 4),
+            new GenericItem("Generic Item3", 3 , 0, 3),
+            new ConjuredItem("Conjured Item", 15, 10, 7)
         };
 
         public IList<Item> GetInventory()
