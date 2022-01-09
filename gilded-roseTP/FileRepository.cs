@@ -20,7 +20,7 @@ namespace gilded_roseTP
         {
             int i = 0;
             
-            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\items.txt");
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Antoine\Desktop\Travail\I1\Architecture applicative\gilded-rose-TP\gilded-roseTP\items.txt");
             
             string nameITEM;
             string sellinITEM;
@@ -63,7 +63,7 @@ namespace gilded_roseTP
             
             try
             {
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\elian\Bureau\I1\Architecture applicative\EbbTechnologies\gilded-rose\items.txt", true))
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\Antoine\Desktop\Travail\I1\Architecture applicative\gilded-rose-TP\gilded-roseTP\items.txt", true))
                 {
                     file.WriteLine("\t" + "Nouvelle injection" + "\t");
                     int i = 0;

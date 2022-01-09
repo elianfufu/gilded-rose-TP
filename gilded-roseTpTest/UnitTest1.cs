@@ -2,6 +2,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using gilded_roseTP;
 using System;
+using gilded_roseTP.Models.Inventory;
+using gilded_roseTP.Models.Shop;
+using gilded_roseTP.Items;
 
 namespace gilded_roseTpTest
 {
