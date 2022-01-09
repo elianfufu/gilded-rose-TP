@@ -4,14 +4,14 @@ using System.Text;
 
 namespace gilded_roseTP
 {
-    public class GenericItem : Item
+    public class AgedBrieItem : Item
     {
-        public GenericItem(string name, int sellIn, int quality, int value) : base(name, sellIn, quality, value){ }
+        public AgedBrieItem(string name, int sellIn, int quality, int value) : base(name, sellIn, quality, value) { }
 
         public override void Update()
         {
             sellIn--;
-            quality--;
+            quality++;
 
             this.CellQualityToFifty();
             this.FloorQualityToZero();

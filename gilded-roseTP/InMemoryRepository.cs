@@ -8,9 +8,10 @@ namespace gilded_roseTP
     {
         private IList<Item> items = new List<Item>()
         {
-            new GenericItem("Generic Item", 3, 3),
-            new GenericItem("Generic Item", -1, 4),
-            new GenericItem("Generic Item", 3 , 0)
+            new GenericItem("Generic Item1", 3, 3, 5),
+            new GenericItem("Generic Item2", -1, 4, 4),
+            new GenericItem("Generic Item3", 3 , 0, 3),
+            new ConjuredItem("Conjured Item", 15, 8, 7)
         };
 
         public IList<Item> Items => this.items;

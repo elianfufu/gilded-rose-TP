@@ -4,9 +4,9 @@ using System.Text;
 
 namespace gilded_roseTP
 {
-    public class conjuredItem : Item
+    public class ConjuredItem : Item
     {
-        public conjuredItem(string name, int sellIn, int quality) : base(name, sellIn, quality) { }
+        public ConjuredItem(string name, int sellIn, int quality, int value) : base(name, sellIn, quality, value) { }
 
         public override void Update()
         {

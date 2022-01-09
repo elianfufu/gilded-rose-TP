@@ -9,12 +9,14 @@ namespace gilded_roseTP
         public string name { get; set; }
         public int sellIn { get; set; }
         public int quality { get; set; }
+        public int value { get; set; }
 
-        public Item(string Type, int SellIn, int Quality)
+        public Item(string Type, int SellIn, int Quality, int Value)
         {
             name = Type;
             sellIn = SellIn;
             quality = Quality;
+            value = Value;
         }
         
 
