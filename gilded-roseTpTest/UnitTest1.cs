@@ -9,18 +9,18 @@ namespace gilded_roseTpTest
     {
         private List<Item> items = new List<Item>()
         {
-            new GenericItem("Generic Item", 3, 3),
-            new GenericItem("Generic Item", -1, 4),
-            new GenericItem("Generic Item", 3 , 0)
+            new GenericItem("Generic Item", 3, 3, 4),
+            new GenericItem("Generic Item", 3, -10, 4),
+            new GenericItem("Generic Item", 3 , 0, 4)
         };
         private InMemoryRepository repository;
-        private InventoryInteractor shop;
+        private InventoryInteractor inventory;
 
         [TestInitialize]
         public void Setup()
         {
             this.repository = new InMemoryRepository();
-            this.shop = new InventoryInteractor(this.repository);
+            this.inventory = new InventoryInteractor(this.repository);
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace gilded_roseTpTest
         [TestMethod]
         public void Should_DecreaseQualityAndSellInEveryDay()
         {
-            shop.UpdateQuality();
+            inventory.UpdateQuality();
             Assert.AreEqual(2, this.repository.Items[0].quality);
             Assert.AreEqual(2, this.repository.Items[0].sellIn);
         }
@@ -45,15 +45,15 @@ namespace gilded_roseTpTest
         [TestMethod]
         public void Should_DecreaseTwiceAsFast()
         {
-            shop.UpdateQuality();
+            inventory.UpdateQuality();
              Assert.AreEqual(-1, this.repository.Items[1].sellIn);
         }
 
         [TestMethod]
         public void Should_NeverHaveNegativeQuality()
         {
-            shop.UpdateQuality();
-            Assert.AreEqual(0, this.repository.Items[2].sellIn);
+            inventory.UpdateQuality();
+            Assert.AreEqual(0, this.repository.Items[2].quality);
         }
     }
 }
