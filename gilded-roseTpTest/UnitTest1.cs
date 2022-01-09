@@ -22,7 +22,7 @@ namespace gilded_roseTpTest
         private InMemoryRepository repository;
         private InventoryInteractor inventory;
         private ShopInteractor shop;
-        List<String> limitedItems = new List<String>() { "gilded_roseTP.GenericItem" };
+        List<String> limitedItems = new List<String>() { "gilded_roseTP.Items.GenericItem" };
 
         [TestInitialize]
         public void Setup()

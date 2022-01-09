@@ -23,7 +23,7 @@ namespace gilded_roseTP
                 Console.WriteLine("{0} Quality {1}", i.name, i.quality);
             }
             List<String> limitedItems = new List<String>();
-            limitedItems.Add("gilded_roseTP.GenericItem");
+            limitedItems.Add("gilded_roseTP.Items.GenericItem");
             ShopInteractor shop = new ShopInteractor(inventary, limitedItems);
             IShopManager shopKeeper = shop;
 
@@ -37,7 +37,7 @@ namespace gilded_roseTP
             {
                 Console.WriteLine("SHOP : {0} Quality {1}", i.name, i.quality);
             }
-            Console.WriteLine("Final Balance" + shop.ReturnBalance());
+            Console.WriteLine("Final Balance " + shop.ReturnBalance());
 
             // BigBossInteractor bigBoss = new BigBossInteractor(new InMemoryShopRepository());
             // IBigBossCount bigBossTotal = bigBoss;

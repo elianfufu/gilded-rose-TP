@@ -1,5 +1,0 @@
-	Nouvelle injection	
-Generic Item1;2;2;5
-Generic Item2;-2;3;4
-Generic Item3;2;0;3
-Conjured Item;14;8;7
